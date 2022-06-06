@@ -1,0 +1,48 @@
+/* SIDEBAR STYLES */
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.sidebar_header h1 {
+    margin: 0;
+}
+
+.sidebar_notes {
+    height: calc(100vh - 78px);
+    overflow-y: scroll;
+}
+.sidebar_note {
+    padding: 25px;
+    cursor: pointer;
+}
+.sidebar_note_title {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar_note button {
+    color: crimson;
+}
+.sidebar_note p {
+    margin: 10px 0;
+}
+.sidebar_note small {
+    display: block;
+    color: #999;
+}
+
+.sidebar_note:hover {
+    background: #ddd;
+}
+.sidebar_note:active,
+.sidebar_note:active small {
+    background: #08c;
+    color: white;
+}
