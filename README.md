@@ -10,3 +10,16 @@
 $ cd next_note_app
 $ npm run dev
 ```
+
+## installed redux related packages
+```shell
+$ npm install --save redux
+$ npm install react-redux
+$ npm install redux-thunk
+$ npm install --save redux-devtools-extension
+$ npm install next-redux-wrapper
+```
+or
+```shell
+$ npm i next-redux-wrapper redux react-redux redux-thunk redux-devtools-extension
+```
