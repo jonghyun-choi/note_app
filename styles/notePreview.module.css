@@ -1,35 +1,28 @@
-.notes__list-item {
+.notePreview {
     cursor: pointer;
 }
 
-.notes__list-item--selected {
-    background: #eeeeee;
-    border-radius: 7px;
-    font-weight: bold;
+.notePreview_title {
 }
 
-.notes__small-title,
-.notes__small-updated {
-    padding: 10px;
-}
-
-.notes__small-title {
+.notePreview_title > strong {
     font-size: 1.2em;
+    float : left;
 }
 
-.notes__small-body {
-    padding: 0 10px;
+.notePreview_title > button {
+    font-size: 1.2em;
+    color : red;
+    background-color: red;
+    float : right;
 }
 
-.notes__small-updated {
+.notePreview_content {
+    font-size: 1em;
+}
+
+.notePreview_lastModified {
     color: #aaaaaa;
     font-style: italic;
     text-align: right;
-}
-
-.notes__preview {
-    display: flex;
-    flex-direction: column;
-    padding: 2em 3em;
-    flex-grow: 1;
 }

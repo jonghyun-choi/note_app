@@ -1,4 +1,5 @@
 import styles from '../styles/main.module.css';
+import React from 'react';
 
 export default function Main({ activeNote, onUpdateNote }) {
     const title = activeNote ? activeNote.title : "";
@@ -30,15 +31,6 @@ export default function Main({ activeNote, onUpdateNote }) {
                     value = { body }    
                     onChange = { e => onEditField("body", e.target.value) }
                 />
-            </div>
-            {/* 미리보기 */}
-            <div className = { styles.main_preview }>
-                <h1 className = { styles.main_preview_title }>
-                    { title }
-                </h1>
-                <div className = { styles.markdown_preview }>
-                    { body }
-                </div>
             </div>
         </div>
     )

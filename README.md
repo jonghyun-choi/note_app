@@ -18,6 +18,8 @@ $ npm install react-redux
 $ npm install redux-thunk
 $ npm install --save redux-devtools-extension
 $ npm install next-redux-wrapper
+$ npm install @reduxjs/toolkit
+$ npm install --save nanoid
 ```
 or
 ```shell

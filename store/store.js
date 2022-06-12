@@ -1,15 +1,9 @@
-import { configureStore } from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
 import { createWrapper } from 'next-redux-wrapper'
-//import rootReducer from '../reducers'
+import noteReducer from './reducers/noteReducer'
 
+export const store = configureStore({
+    reducer : { notes : noteReducer },
+});
 
-const initialState = {};
-
-export const store = configureStore(
-    () => {},
-    initialState,
-    {}
-);
-
-const makeStore = () => store;
-export const wrapper = createWrapper(makeStore);
+export const wrapper = createWrapper(() => store);
