@@ -9,12 +9,7 @@ export default function Sidebar() {
     const dispatch = useDispatch();
     const addNoteHandler = (e) => {
         e.preventDefault();
-        dispatch(addNote({
-            title : "Enter Title ...",
-            content : "Enter content ...",
-            id : nanoid(),
-            lastModified : new Date().toLocaleString()
-        }));
+        dispatch(addNote());
     };
 
     return (
