@@ -1,16 +1,27 @@
-import styles from '../styles/main.module.css';
-import React from 'react';
-import Footer from './Footer'
-import Content from './Content'
+import styles from '../styles/main.module.css'
+import React from 'react'
+import { useSelector } from 'react-redux'
 
 export default function Main() {
+    const editingNote = useSelector((state) => state.notes.editingNote);
 
     return (
-        <div>
-            <Content />
-            <Footer />
+        <div className={ styles.main }>
+            <input 
+                className={ styles.main_title }
+                type="text"
+                autoFocus
+                placeholder="Write your title here..."
+                value={ editingNote.title }
+            />
+            <textarea 
+                className={ styles.main_content }
+                placeholder="Write your note here..."
+                value={ editingNote.content }
+            />
         </div>
     );
+
 
     // return (
     //     <div className = { styles.main }>

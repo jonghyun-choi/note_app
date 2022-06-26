@@ -1,8 +1,18 @@
 .notePreview {
     cursor: pointer;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 20%;
+    grid-template-areas:
+        "title"
+        "content"
+        "lastModified"
+    ;
+    padding: 1rem;
 }
 
 .notePreview_title {
+    grid-area: title;
 }
 
 .notePreview_title > strong {
@@ -12,16 +22,19 @@
 
 .notePreview_title > button {
     font-size: 1.2em;
-    color : red;
-    background-color: red;
+    color : rgb(186, 39, 39);
     float : right;
+    border: none;
+    background-color : white;
 }
 
 .notePreview_content {
+    grid-area: content;
     font-size: 1em;
 }
 
 .notePreview_lastModified {
+    grid-area: lastModified;
     color: #aaaaaa;
     font-style: italic;
     text-align: right;

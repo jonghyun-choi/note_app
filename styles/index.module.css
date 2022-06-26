@@ -1,3 +1,25 @@
-.note {
-    display: flex;
+.wrapper {
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 70%;
+    grid-template-areas:
+        "Header Header"
+        "Sidebar Main"
+    ;
+    grid-gap: 10px;
 }
+
+.wrapper_header { 
+    grid-area: Header; 
+}
+.wrapper_aside { 
+    grid-area: Sidebar;
+}
+.wrapper_main { 
+    grid-area: Main; 
+    background-color: #999;
+    border-radius: 5px;
+}
+

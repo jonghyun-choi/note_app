@@ -1,11 +1,14 @@
+
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
     padding: 0;
     margin: 0;
+}
+
+/*
+html,
+body {
+    
     font-family: 
         -apple-system, 
         BlinkMacSystemFont, 
@@ -34,3 +37,4 @@ button {
 button:hover {
     color: #04c;
 }
+*/

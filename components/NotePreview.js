@@ -23,7 +23,7 @@ export default function NotePreview({ note }) {
         <div className={ styles.notePreview } onClick={() => selectNoteHandler(id)}>
             <div className={ styles.notePreview_title }>
                 <strong>{ title }</strong>
-                <button onClick={() => deleteNoteHandler(id)}>Delete</button>
+                <button onClick={() => deleteNoteHandler(id)}>X</button>
             </div>
 
             <p class={ styles.notePreview_content }>
